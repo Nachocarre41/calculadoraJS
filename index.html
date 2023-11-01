@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>"Cerramos números varón"</h1>
+    <h2>la cuentita master</h2>
+    <div class="calculadora">
+        <!-- readonly para no poder modificar el input desde la web -->
+
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1" onclick="agregarValor('1')">
+        <input type="button" value="2" onclick="agregarValor('2')">
+        <input type="button" value="3" onclick="agregarValor('3')">
+        <input type="button" value="+" onclick="agregarValor('+')">
+        <br>
+        <input type="button" value="4" onclick="agregarValor('4')">
+        <input type="button" value="5" onclick="agregarValor('5')">
+        <input type="button" value="6" onclick="agregarValor('6')">
+        <input type="button" value="-" onclick="agregarValor('-')">
+        <br>
+        <input type="button" value="7" onclick="agregarValor('7')">
+        <input type="button" value="8" onclick="agregarValor('8')">
+        <input type="button" value="9" onclick="agregarValor('9')">
+        <input type="button" value="*" onclick="agregarValor('*')">
+        <br>
+        <input type="button" value="0" onclick="agregarValor('0')">
+        <input type="button" value="." onclick="agregarValor('.')">
+        <input type="button" value="/" onclick="agregarValor('/')">
+        <input type="button" value="=" onclick="resultado()">
+        <br>
+        <input type="button" value="C" onclick="borrar()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
